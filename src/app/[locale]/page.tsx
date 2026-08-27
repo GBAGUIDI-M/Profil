@@ -24,7 +24,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const tNav = await getTranslations({ locale, namespace: 'Navigation' });
 
   return (
-    <div className="relative min-h-screen flex flex-col bg-background">
+    <div className="relative flex flex-col">
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-16 overflow-hidden">
