@@ -46,7 +46,7 @@ export default function Contact() {
           </a>
           
           <a 
-            href="#" 
+            href="https://github.com/GBAGUIDI-M" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group flex flex-col items-center gap-3 text-muted-foreground hover:text-accent transition-colors"
