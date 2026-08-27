@@ -1,17 +1,18 @@
 {
+  "profile": "Young researcher in mathematics and biostatistics, currently completing a Master of Science in Mathematical Sciences at the African Institute for Mathematical Sciences (AIMS South Africa, degree awarded by Stellenbosch University). Holder of two Master's degrees from the University of Abomey-Calavi (Biostatistics; Pure and Applied Mathematics) and a Bachelor's degree in Fundamental Mathematics. Strong experience in mathematical and epidemiological modeling, numerical analysis of PDEs, machine learning, and scientific programming (Python, R, Matlab, C/C++). Actively involved in training, mentorship, and scientific outreach across Africa (AIMS, Africa Scientifique, WAFIRA, Google DeepMind AI Research Foundations).",
   "education": [
     {
       "id": "aims",
       "degree": "Master of Science in Mathematical Sciences",
-      "institution": "African Institute for Mathematical Sciences (AIMS South Africa)",
+      "institution": "African Institute for Mathematical Sciences (AIMS South Africa) — degree awarded by Stellenbosch University",
       "date": "09/2025 - 07/2026",
       "location": "Cape Town, South Africa",
-      "description": "Specialization in Mathematical Sciences. Research project in Pseudo-differential Operators and Microlocal Analysis. Achieved Distinction in the vast majority of courses."
+      "description": "Specialization: Mathematical Sciences. Academic transcript: overwhelming majority of 'Distinction' grades across all skills and review courses (SageMath, physical problem solving, Python, statistics, mathematical biology, graph theory, quantum computing, PDEs, topology, etc.). Research project: Pseudo-differential Operators and Microlocal Analysis. Awarded 1st Prize (R1,500 value) by AIMS South Africa (2026)."
     },
     {
       "id": "uac-biostat",
       "degree": "Master's Degree in Bio-Statistics",
-      "institution": "Université d'Abomey-Calavi (UAC)",
+      "institution": "Faculty of Agronomic Sciences (FSA), Doctoral School of Agronomic and Water Sciences, UAC",
       "date": "09/2023 - 2025",
       "location": "Abomey-Calavi, Benin",
       "description": "Statistical learning, complex systems modeling, experimental design, and ecological modeling."
@@ -19,7 +20,7 @@
     {
       "id": "uac-math",
       "degree": "Master's in Pure and Applied Mathematics",
-      "institution": "Université d'Abomey-Calavi (UAC)",
+      "institution": "Faculty of Sciences and Technology (FAST), University of Abomey-Calavi (UAC)",
       "date": "02/2023 - 08/2025",
       "location": "Abomey-Calavi, Benin",
       "description": "Functional analysis, spectral theory, pseudo-Riemannian geometry, and partial differential equations."
@@ -27,28 +28,20 @@
     {
       "id": "uac-bsc",
       "degree": "Bachelor's Degree in Fundamental Mathematics",
-      "institution": "Université d'Abomey-Calavi (UAC)",
+      "institution": "Faculty of Sciences and Technology (FAST), UAC",
       "date": "11/2017 - 11/2021",
       "location": "Abomey-Calavi, Benin",
-      "description": "Linear algebra, real and complex analysis, differential equations, dynamical systems, and object-oriented programming (C/C++)."
+      "description": "Major: Mathematics and Applications, Specialty: Fundamental Mathematics. Linear algebra, real and complex analysis, differential equations, dynamical systems, and object-oriented programming."
     }
   ],
   "experience": [
     {
       "id": "icammda",
-      "role": "Applied Mathematical Modeling & Data Analytics Intern",
+      "role": "Intern in Applied Mathematical Modeling and Data Analysis",
       "institution": "ICAMMDA, Federal University Oye-Ekiti",
       "date": "09/2024 - 10/2024",
       "location": "Ekiti State, Nigeria",
-      "description": "Practical experience in R programming, malaria modeling, and data analytics."
-    },
-    {
-      "id": "math-uac",
-      "role": "Mathematical Analysis Intern",
-      "institution": "Université d'Abomey-Calavi (UAC)",
-      "date": "08/2022 - 10/2022",
-      "location": "Abomey-Calavi, Benin",
-      "description": "Solving analytical problems related to operators in Hilbert spaces."
+      "description": "Practical experience in R programming, malaria modeling, data analysis, and project management. Skills developed: statistical modeling, scientific presentation, research networking."
     },
     {
       "id": "teacher",
@@ -56,7 +49,82 @@
       "institution": "Collège Sainte Thérèse de Zinvié",
       "date": "2021 - 2022",
       "location": "Zinvié, Benin",
-      "description": "Mentoring high school students in geometry, trigonometry, and calculus."
+      "description": "Supervised 'Première D' students in mathematics: geometry, trigonometry, and analysis."
+    },
+    {
+      "id": "math-uac",
+      "role": "Intern in Mathematical Analysis",
+      "institution": "Department of Mathematics, University of Abomey-Calavi (UAC)",
+      "date": "08/2022 - 10/2022",
+      "location": "Abomey-Calavi, Benin",
+      "description": "Solved analysis problems related to operators on Hilbert spaces."
     }
-  ]
+  ],
+  "skills": [
+    {
+      "category": "Programming & Tools",
+      "items": ["Python (PyTorch, TensorFlow, Pandas, Scikit-learn)", "R, Matlab, C/C++", "LaTeX (advanced)", "Microsoft Office Suite, CSPro, Access", "SageMath, Scilab"]
+    },
+    {
+      "category": "Mathematics & Data Science",
+      "items": ["Stochastic calculus, functional analysis", "Operator theory, microlocal analysis", "Numerical analysis of PDEs", "Epidemiological and biostatistical modeling", "Deep Learning & computer vision (YOLOv7)"]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "AI Research Foundations for Higher Education Programme",
+      "issuer": "AIMS South Africa, Google DeepMind, UCL",
+      "date": "2026",
+      "description": "'Train the Trainer' program covering technical content of DeepMind AI course, innovative pedagogical practices, and AI teaching approaches."
+    },
+    {
+      "title": "Elements of AI",
+      "issuer": "Reaktor & University of Helsinki",
+      "date": "Online",
+      "description": "Comprehensive online training on the fundamentals of artificial intelligence."
+    },
+    {
+      "title": "Entrepreneurship and Skills Development",
+      "issuer": "The Tony Elumelu Foundation",
+      "date": "",
+      "description": "Entrepreneurship and skills development training program."
+    },
+    {
+      "title": "Certificate of Internship — R, Malaria Modeling, Data Analytics",
+      "issuer": "ICAMMDA, Federal University Oye-Ekiti, Nigeria",
+      "date": "09/2024",
+      "description": ""
+    }
+  ],
+  "workshops": [
+    "Participant — Mathematics in Industry Study Group (MISG), Johannesburg, South Africa (Jan. 2026). Solved industrial problems through mathematical modeling.",
+    "AIMS South Africa Integrative Think Tank (13–17 April 2026).",
+    "ICAMMDA Workshop on Machine Learning Modelling, Nigeria (August 2026).",
+    "AI Governance for Policymakers and Regulators (AIMS & SADA) (August 2026).",
+    "Selected for first professional training cohort of AIMS Senegal campus (2026).",
+    "International Conference on Mathematical Sciences and Optimization (AMSO), Nigeria (August 2024).",
+    "Africa Scientifique Programme — Scholars Program (AIMS South Africa), Cape Town (February 2026).",
+    "Certificate of Leadership for 'Africa Scientifique Programme 2026'.",
+    "WAFIRA (Women Advancement Forum for International Research & Academia) — Male Peer Champion (Oct.–Nov. 2025).",
+    "EEIA Benin Excellence (Summer School) — Deep Learning, YOLOv7 (June–Sept. 2023)."
+  ],
+  "scholarships": [
+    {
+      "title": "Mastercard Foundation Scholarship",
+      "date": "2025 - ongoing",
+      "description": "Prestigious scholarship for study and research at the African Institute for Mathematical Sciences (AIMS)."
+    },
+    {
+      "title": "DAAD Scholarship",
+      "date": "2023 - 2025",
+      "description": "Academic excellence scholarship for research in biostatistics."
+    },
+    {
+      "title": "World Bank Scholarship",
+      "date": "2021 - 2023",
+      "description": "Financial support based on academic excellence for research in pure and applied mathematics."
+    }
+  ],
+  "languages": ["French: Native language (C2)", "English: Fluent (C1)", "Fon: Native language"],
+  "interests": ["Finance & Tech (trading, cryptocurrencies, robotics)", "Global Affairs (international geopolitics)", "Digital culture"]
 }

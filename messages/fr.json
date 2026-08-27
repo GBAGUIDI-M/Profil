@@ -12,7 +12,11 @@
   "Home": {
     "heroTitle": "Mannondé D. GBAGUIDI",
     "heroSubtitle": "Étudier les structures cachées dans les équations.",
-    "heroDescription": "Exploration des structures mathématiques, EDP, analyse microlocale et systèmes complexes."
+    "heroDescription": "Exploration des structures mathématiques, EDP, analyse microlocale et systèmes complexes.",
+    "profileTitle": "Profil & Aperçu",
+    "skillsTitle": "Expertise Technique",
+    "scholarshipsTitle": "Reconnaissances & Prix",
+    "exploreCV": "Voir le CV complet"
   },
   "CV": {
     "title": "Curriculum Vitae",
@@ -24,7 +28,12 @@
     "whoIAm": "Qui je suis",
     "description": "Je suis un mathématicien et chercheur qui fait le lien entre les mathématiques pures rigoureuses et les problèmes appliqués critiques. Mes travaux portent sur les opérateurs pseudo-différentiels, l'analyse microlocale et la modélisation biomathématique des systèmes complexes.",
     "academicJourney": "Parcours Académique",
-    "experience": "Expérience"
+    "experience": "Expérience",
+    "skills": "Compétences & Expertise",
+    "certifications": "Certifications & Formations",
+    "workshops": "Ateliers, Séminaires & Conférences",
+    "scholarships": "Bourses & Distinctions",
+    "languages": "Langues & Centres d'intérêt"
   },
   "Projects": {
     "title": "Projets de Recherche",

@@ -12,7 +12,11 @@
   "Home": {
     "heroTitle": "Mannondé D. GBAGUIDI",
     "heroSubtitle": "Study the structures hidden inside equations.",
-    "heroDescription": "Exploring mathematical structures, PDEs, microlocal analysis, and complex systems."
+    "heroDescription": "Exploring mathematical structures, PDEs, microlocal analysis, and complex systems.",
+    "profileTitle": "Profile & Overview",
+    "skillsTitle": "Technical Expertise",
+    "scholarshipsTitle": "Recognitions & Awards",
+    "exploreCV": "Read full CV"
   },
   "CV": {
     "title": "Curriculum Vitae",
@@ -24,7 +28,12 @@
     "whoIAm": "Who I am",
     "description": "I am a mathematician and researcher bridging the gap between rigorous pure mathematics and critical applied problems. My work spans pseudo-differential operators, microlocal analysis, and biomathematical modeling of complex systems.",
     "academicJourney": "Academic Journey",
-    "experience": "Experience"
+    "experience": "Experience",
+    "skills": "Core Skills & Expertise",
+    "certifications": "Certifications & Training",
+    "workshops": "Workshops, Seminars & Conferences",
+    "scholarships": "Scholarships & Awards",
+    "languages": "Languages & Interests"
   },
   "Projects": {
     "title": "Research Projects",
