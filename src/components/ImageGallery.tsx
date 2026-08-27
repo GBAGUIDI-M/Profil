@@ -49,7 +49,8 @@ export default function ImageGallery({ images, title }: { images: string[], titl
               <Image 
                 src={img} 
                 alt={`${title} - Image ${imgIdx + 1}`} 
-                fill 
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover group-hover:scale-105 transition-transform duration-700" 
               />
             </div>

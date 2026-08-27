@@ -67,6 +67,7 @@ export default function Home() {
             src="/Mannonde.png"
             alt="Mannondé D. GBAGUIDI"
             fill
+            sizes="(max-width: 768px) 100vw, 33vw"
             className="object-cover rounded-3xl border border-border/50 shadow-2xl z-10 relative"
             priority
           />
