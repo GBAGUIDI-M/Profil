@@ -1,0 +1,34 @@
+[
+  {
+    "id": "pseudo-differential",
+    "title": "Pseudo-differential Operators and Microlocal Analysis",
+    "category": "pure-mathematics",
+    "date": "2025 - Present",
+    "abstract": "Study of pseudo-differential operators in the framework of microlocal analysis: symbolic calculus, regularity properties in Sobolev spaces, and propagation of singularities via wave front set theory.",
+    "math": "Op(a)u(x) = \\frac{1}{(2\\pi)^n} \\int_{\\mathbb{R}^n} e^{ix\\cdot\\xi} a(x,\\xi) \\hat{u}(\\xi) d\\xi"
+  },
+  {
+    "id": "seir-b-cholera",
+    "title": "Structural Robustness Analysis of an SEIR-B Model for Cholera",
+    "category": "biomathematics",
+    "date": "2023 - 2025",
+    "abstract": "Development and analysis of a compartmental SEIR-B model for cholera dynamics in West Africa, calculating the controlled reproduction rate with sensitivity analysis.",
+    "math": "\\frac{dS}{dt} = \\Lambda - \\beta_1 S I - \\beta_2 S B - \\mu S"
+  },
+  {
+    "id": "multi-strain-epidemic",
+    "title": "Multi-strain Epidemic Model with Non-local Dispersion",
+    "category": "biomathematics",
+    "date": "2024 - 2025",
+    "abstract": "Rigorous mathematical analysis of an SIS model with non-local dispersion governed by integro-differential equations. Numerical exploration reveals spatial coexistence phenomena via niche segregation.",
+    "math": "\\partial_t u = D \\Delta u + u(r - u - a v)"
+  },
+  {
+    "id": "kruskal-wallis",
+    "title": "Nonparametric Kruskal-Wallis Test Implementation",
+    "category": "computational",
+    "date": "2024",
+    "abstract": "Comparative implementation and performance analysis of the nonparametric Kruskal-Wallis test across MATLAB, R, and Python.",
+    "math": "H = \\frac{12}{N(N+1)} \\sum_{i=1}^k \\frac{R_i^2}{n_i} - 3(N+1)"
+  }
+]

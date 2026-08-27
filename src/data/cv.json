@@ -1,0 +1,62 @@
+{
+  "education": [
+    {
+      "id": "aims",
+      "degree": "Master of Science in Mathematical Sciences",
+      "institution": "African Institute for Mathematical Sciences (AIMS South Africa)",
+      "date": "09/2025 - 07/2026",
+      "location": "Cape Town, South Africa",
+      "description": "Specialization in Mathematical Sciences. Research project in Pseudo-differential Operators and Microlocal Analysis. Achieved Distinction in the vast majority of courses."
+    },
+    {
+      "id": "uac-biostat",
+      "degree": "Master's Degree in Bio-Statistics",
+      "institution": "Université d'Abomey-Calavi (UAC)",
+      "date": "09/2023 - 2025",
+      "location": "Abomey-Calavi, Benin",
+      "description": "Statistical learning, complex systems modeling, experimental design, and ecological modeling."
+    },
+    {
+      "id": "uac-math",
+      "degree": "Master's in Pure and Applied Mathematics",
+      "institution": "Université d'Abomey-Calavi (UAC)",
+      "date": "02/2023 - 08/2025",
+      "location": "Abomey-Calavi, Benin",
+      "description": "Functional analysis, spectral theory, pseudo-Riemannian geometry, and partial differential equations."
+    },
+    {
+      "id": "uac-bsc",
+      "degree": "Bachelor's Degree in Fundamental Mathematics",
+      "institution": "Université d'Abomey-Calavi (UAC)",
+      "date": "11/2017 - 11/2021",
+      "location": "Abomey-Calavi, Benin",
+      "description": "Linear algebra, real and complex analysis, differential equations, dynamical systems, and object-oriented programming (C/C++)."
+    }
+  ],
+  "experience": [
+    {
+      "id": "icammda",
+      "role": "Applied Mathematical Modeling & Data Analytics Intern",
+      "institution": "ICAMMDA, Federal University Oye-Ekiti",
+      "date": "09/2024 - 10/2024",
+      "location": "Ekiti State, Nigeria",
+      "description": "Practical experience in R programming, malaria modeling, and data analytics."
+    },
+    {
+      "id": "math-uac",
+      "role": "Mathematical Analysis Intern",
+      "institution": "Université d'Abomey-Calavi (UAC)",
+      "date": "08/2022 - 10/2022",
+      "location": "Abomey-Calavi, Benin",
+      "description": "Solving analytical problems related to operators in Hilbert spaces."
+    },
+    {
+      "id": "teacher",
+      "role": "Mathematics Teacher",
+      "institution": "Collège Sainte Thérèse de Zinvié",
+      "date": "2021 - 2022",
+      "location": "Zinvié, Benin",
+      "description": "Mentoring high school students in geometry, trigonometry, and calculus."
+    }
+  ]
+}

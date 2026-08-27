@@ -1,0 +1,23 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "research": "Research",
+    "publications": "Publications",
+    "projects": "Projects",
+    "gallery": "Gallery & Blog",
+    "cv": "CV",
+    "contact": "Contact"
+  },
+  "Home": {
+    "heroTitle": "Mannondé D. GBAGUIDI",
+    "heroSubtitle": "Study the structures hidden inside equations.",
+    "heroDescription": "Exploring mathematical structures, PDEs, microlocal analysis, and complex systems."
+  },
+  "CV": {
+    "title": "Curriculum Vitae",
+    "description": "Download my curriculum vitae in your preferred language.",
+    "downloadEn": "Download CV (English)",
+    "downloadFr": "Download CV (French)"
+  }
+}

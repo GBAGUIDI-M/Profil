@@ -1,0 +1,23 @@
+{
+  "Navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "research": "Recherche",
+    "publications": "Publications",
+    "projects": "Projets",
+    "gallery": "Galerie & Blog",
+    "cv": "CV",
+    "contact": "Contact"
+  },
+  "Home": {
+    "heroTitle": "Mannondé D. GBAGUIDI",
+    "heroSubtitle": "Étudier les structures cachées dans les équations.",
+    "heroDescription": "Exploration des structures mathématiques, EDP, analyse microlocale et systèmes complexes."
+  },
+  "CV": {
+    "title": "Curriculum Vitae",
+    "description": "Téléchargez mon curriculum vitae dans la langue de votre choix.",
+    "downloadEn": "Télécharger le CV (Anglais)",
+    "downloadFr": "Télécharger le CV (Français)"
+  }
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "microlocal-pde",
+    "title": "Pseudo-differential Operators and Microlocal Analysis",
+    "authors": ["Mannondé D. Gbaguidi"],
+    "journal": "Master's Thesis (Mathematical Sciences), AIMS South Africa",
+    "year": 2026,
+    "abstract": "Study of pseudo-differential operators in the framework of microlocal analysis. Exploring symbolic calculus, regularity properties in Sobolev spaces, and propagation of singularities.",
+    "pdf": "/publications/Projet_AIMS.pdf",
+    "type": "thesis",
+    "area": "analysis"
+  },
+  {
+    "id": "cholera-seir-b",
+    "title": "Structural Robustness Analysis of an SEIR-B Model for Cholera",
+    "authors": ["Mannondé D. Gbaguidi"],
+    "journal": "Master's Thesis (Bio-Statistics), UAC",
+    "year": 2025,
+    "abstract": "Development and analysis of a compartmental SEIR-B model for cholera dynamics in West Africa. Calculates the controlled reproduction rate with sensitivity analysis.",
+    "pdf": "/publications/Biostatistic.pdf",
+    "type": "thesis",
+    "area": "biomathematics"
+  }
+]
