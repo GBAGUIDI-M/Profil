@@ -8,25 +8,5 @@
     "content": "ICAMMDA Workshop on Machine Learning Modelling, held at the Federal University Oye-Ekiti (FUOYE) in Nigeria from August 3 to 21, 2026. The event featured Professor Christopher Thron (Texas A&M University-Central Texas) as the invited speaker. We explored the foundations of ML models, particularly tree-based models, as well as the formulation of research questions and the development of effective modeling strategies.",
     "coverImage": "/seminaire-icammda/IMG-20260803-WA0199.jpg",
     "imageFolder": "seminaire-icammda"
-  },
-  {
-    "id": "aims-seminar",
-    "title": "AIMS AI Seminar",
-    "date": "August 2026",
-    "location": "AIMS, South Africa",
-    "summary": "Participated in a seminar on artificial intelligence and its applications in complex systems.",
-    "content": "I had the opportunity to participate in the intensive seminar organized by AIMS South Africa on artificial intelligence and its applications in complex systems. This event allowed me to exchange with passionate researchers on how machine learning models can be coupled with partial differential equations to solve complex bio-mathematical problems. An intellectually stimulating week, full of learning and new research perspectives!",
-    "images": [
-      "/Mannonde.png"
-    ]
-  },
-  {
-    "id": "math-conference",
-    "title": "Conference on Partial Differential Equations",
-    "date": "June 2026",
-    "location": "UAC, Benin",
-    "summary": "Presented recent work on pseudo-differential operators.",
-    "content": "At the annual applied mathematics conference at UAC, I presented my recent work on pseudo-differential operators and microlocal analysis. This was an opportunity to discuss the structural robustness properties in specific functional spaces. The feedback from the audience was incredibly constructive in refining my future research directions.",
-    "images": []
   }
 ]
