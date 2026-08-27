@@ -34,7 +34,7 @@ export default function Contact() {
           </a>
           
           <a 
-            href="https://linkedin.com/in/mannonde-gbaguidi-224913352" 
+            href="https://linkedin.com/in/mannonde-gbaguidi" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group flex flex-col items-center gap-3 text-muted-foreground hover:text-accent transition-colors"
