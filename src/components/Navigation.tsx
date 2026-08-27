@@ -81,7 +81,7 @@ export default function Navigation() {
 
       {/* Mobile Bottom Navigation */}
       <nav className="md:hidden fixed bottom-0 left-0 w-full h-16 bg-background/90 backdrop-blur-lg border-t z-50 flex items-center justify-around px-2 pb-safe">
-        {navItems.slice(0, 5).map((item) => {
+        {navItems.filter(item => !["/research", "/projects"].includes(item.path)).slice(0, 5).map((item) => {
           const isActive = pathname === item.path;
           const Icon = item.icon;
           return (
