@@ -27,7 +27,7 @@ export default function GalleryPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {galleryData.map((event) => {
-          const coverImage = event.coverImage || (event.images && event.images.length > 0 ? event.images[0] : null);
+          const coverImage = event.coverImage || ((event as any).images && (event as any).images.length > 0 ? (event as any).images[0] : null);
 
           return (
             <Link 

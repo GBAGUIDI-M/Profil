@@ -23,7 +23,7 @@ export default async function GalleryDetailPage({ params }: { params: Promise<{ 
     notFound();
   }
 
-  let images = event.images || [];
+  let images = (event as any).images || [];
 
   if (event.imageFolder) {
     const dirPath = path.join(process.cwd(), "public", event.imageFolder);
