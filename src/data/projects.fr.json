@@ -1,0 +1,34 @@
+[
+  {
+    "id": "pseudo-differential",
+    "title": "Opérateurs Pseudo-différentiels et Analyse Microlocale",
+    "category": "Mathématiques pures",
+    "date": "2025 - Présent",
+    "abstract": "Étude des opérateurs pseudo-différentiels dans le cadre de l'analyse microlocale : calcul symbolique, propriétés de régularité dans les espaces de Sobolev et propagation des singularités via la théorie du front d'onde.",
+    "math": "Op(a)u(x) = \\frac{1}{(2\\pi)^n} \\int_{\\mathbb{R}^n} e^{ix\\cdot\\xi} a(x,\\xi) \\hat{u}(\\xi) d\\xi"
+  },
+  {
+    "id": "seir-b-cholera",
+    "title": "Analyse de Robustesse Structurelle d'un Modèle SEIR-B pour le Choléra",
+    "category": "Biomathématiques",
+    "date": "2023 - 2025",
+    "abstract": "Développement et analyse d'un modèle compartimental SEIR-B pour la dynamique du choléra en Afrique de l'Ouest, calcul du taux de reproduction contrôlé avec analyse de sensibilité.",
+    "math": "\\frac{dS}{dt} = \\Lambda - \\beta_1 S I - \\beta_2 S B - \\mu S"
+  },
+  {
+    "id": "multi-strain-epidemic",
+    "title": "Modèle Épidémique Multi-souches avec Dispersion Non Locale",
+    "category": "Biomathématiques",
+    "date": "2024 - 2025",
+    "abstract": "Analyse mathématique rigoureuse d'un modèle SIS avec dispersion non locale régie par des équations intégro-différentielles. L'exploration numérique révèle des phénomènes de coexistence spatiale via la ségrégation de niches.",
+    "math": "\\partial_t u = D \\Delta u + u(r - u - a v)"
+  },
+  {
+    "id": "kruskal-wallis",
+    "title": "Implémentation du Test Non Paramétrique de Kruskal-Wallis",
+    "category": "Calcul numérique",
+    "date": "2024",
+    "abstract": "Implémentation comparative et analyse des performances du test non paramétrique de Kruskal-Wallis sous MATLAB, R et Python.",
+    "math": "H = \\frac{12}{N(N+1)} \\sum_{i=1}^k \\frac{R_i^2}{n_i} - 3(N+1)"
+  }
+]

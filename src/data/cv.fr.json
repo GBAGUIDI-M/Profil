@@ -1,0 +1,62 @@
+{
+  "education": [
+    {
+      "id": "aims",
+      "degree": "Master en Sciences Mathématiques",
+      "institution": "Institut Africain des Sciences Mathématiques (AIMS Afrique du Sud)",
+      "date": "09/2025 - 07/2026",
+      "location": "Le Cap, Afrique du Sud",
+      "description": "Spécialisation en sciences mathématiques. Projet de recherche en opérateurs pseudo-différentiels et analyse microlocale. Distinction obtenue dans la grande majorité des cours."
+    },
+    {
+      "id": "uac-biostat",
+      "degree": "Master en Bio-Statistiques",
+      "institution": "Université d'Abomey-Calavi (UAC)",
+      "date": "09/2023 - 2025",
+      "location": "Abomey-Calavi, Bénin",
+      "description": "Apprentissage statistique, modélisation des systèmes complexes, plan d'expérience et modélisation écologique."
+    },
+    {
+      "id": "uac-math",
+      "degree": "Master en Mathématiques Pures et Appliquées",
+      "institution": "Université d'Abomey-Calavi (UAC)",
+      "date": "02/2023 - 08/2025",
+      "location": "Abomey-Calavi, Bénin",
+      "description": "Analyse fonctionnelle, théorie spectrale, géométrie pseudo-riemannienne et équations aux dérivées partielles."
+    },
+    {
+      "id": "uac-bsc",
+      "degree": "Licence en Mathématiques Fondamentales",
+      "institution": "Université d'Abomey-Calavi (UAC)",
+      "date": "11/2017 - 11/2021",
+      "location": "Abomey-Calavi, Bénin",
+      "description": "Algèbre linéaire, analyse réelle et complexe, équations différentielles, systèmes dynamiques et programmation orientée objet (C/C++)."
+    }
+  ],
+  "experience": [
+    {
+      "id": "icammda",
+      "role": "Stagiaire en Modélisation Mathématique Appliquée et Analyse de Données",
+      "institution": "ICAMMDA, Université Fédérale Oye-Ekiti",
+      "date": "09/2024 - 10/2024",
+      "location": "État d'Ekiti, Nigeria",
+      "description": "Expérience pratique en programmation R, modélisation du paludisme et analyse de données."
+    },
+    {
+      "id": "math-uac",
+      "role": "Stagiaire en Analyse Mathématique",
+      "institution": "Université d'Abomey-Calavi (UAC)",
+      "date": "08/2022 - 10/2022",
+      "location": "Abomey-Calavi, Bénin",
+      "description": "Résolution de problèmes analytiques liés aux opérateurs dans les espaces de Hilbert."
+    },
+    {
+      "id": "teacher",
+      "role": "Professeur de Mathématiques",
+      "institution": "Collège Sainte Thérèse de Zinvié",
+      "date": "2021 - 2022",
+      "location": "Zinvié, Bénin",
+      "description": "Accompagnement d'élèves de lycée en géométrie, trigonométrie et calcul infinitésimal."
+    }
+  ]
+}

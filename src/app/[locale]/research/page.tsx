@@ -3,53 +3,55 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Network, Activity, Cpu, Calculator } from "lucide-react";
-
-const RESEARCH_AREAS = [
-  {
-    id: "analysis",
-    title: "Mathematical Analysis",
-    icon: Calculator,
-    color: "from-blue-500/20 to-transparent",
-    topics: ["Partial Differential Equations", "Functional Analysis", "Operator Theory", "Spectral Theory"],
-    position: { x: "20%", y: "20%" },
-  },
-  {
-    id: "microlocal",
-    title: "Microlocal & Pseudo-Differential",
-    icon: Network,
-    color: "from-indigo-500/20 to-transparent",
-    topics: ["Pseudo-differential operators", "Hörmander calculus", "Parametrices", "Symbol classes"],
-    position: { x: "60%", y: "30%" },
-  },
-  {
-    id: "biomath",
-    title: "Biomathematics",
-    icon: Activity,
-    color: "from-emerald-500/20 to-transparent",
-    topics: ["Epidemiological modelling", "Dynamical systems", "Mathematical biology", "Spatial modelling"],
-    position: { x: "30%", y: "70%" },
-  },
-  {
-    id: "ai",
-    title: "Computational & AI",
-    icon: Cpu,
-    color: "from-purple-500/20 to-transparent",
-    topics: ["Machine learning", "Scientific computing", "AI for mathematics", "Ecological modelling"],
-    position: { x: "70%", y: "60%" },
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function Research() {
   const [activeNode, setActiveNode] = useState<string | null>(null);
+  const t = useTranslations("Research");
+
+  const RESEARCH_AREAS = [
+    {
+      id: "analysis",
+      title: t("areas.analysis"),
+      icon: Calculator,
+      color: "from-blue-500/20 to-transparent",
+      topics: t.raw("areas.analysisTopics"),
+      position: { x: "20%", y: "20%" },
+    },
+    {
+      id: "microlocal",
+      title: t("areas.microlocal"),
+      icon: Network,
+      color: "from-indigo-500/20 to-transparent",
+      topics: t.raw("areas.microlocalTopics"),
+      position: { x: "60%", y: "30%" },
+    },
+    {
+      id: "biomath",
+      title: t("areas.biomath"),
+      icon: Activity,
+      color: "from-emerald-500/20 to-transparent",
+      topics: t.raw("areas.biomathTopics"),
+      position: { x: "30%", y: "70%" },
+    },
+    {
+      id: "ai",
+      title: t("areas.ai"),
+      icon: Cpu,
+      color: "from-purple-500/20 to-transparent",
+      topics: t.raw("areas.aiTopics"),
+      position: { x: "70%", y: "60%" },
+    },
+  ];
 
   return (
     <div className="min-h-screen px-6 py-24 md:px-16 lg:px-24 max-w-7xl mx-auto flex flex-col relative">
       <header className="mb-12 z-20">
         <h1 className="text-4xl md:text-5xl font-serif font-bold tracking-tight mb-6">
-          Research Map
+          {t("title")}
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl">
-          An interconnected view of my mathematical and computational research domains. Select an area to explore its topology.
+          {t("description")}
         </p>
       </header>
 
@@ -114,7 +116,7 @@ export default function Research() {
                       <div className={`h-1 w-full bg-gradient-to-r ${area.color}`} />
                       <div className="p-4">
                         <ul className="space-y-2">
-                          {area.topics.map((topic, i) => (
+                          {area.topics.map((topic: string, i: number) => (
                             <motion.li 
                               key={i} 
                               initial={{ opacity: 0, x: -10 }}

@@ -1,6 +1,4 @@
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import galleryData from "@/data/gallery.json";
 import Image from "next/image";
 import { Link } from "@/routing";
 import { Calendar, MapPin, ArrowRight } from "lucide-react";
@@ -11,22 +9,27 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return { title: `MD.G | ${t('gallery')}` };
 }
 
-export default function GalleryPage() {
-  const t = useTranslations("Navigation");
+export default async function GalleryPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const galleryData = locale === 'fr' 
+    ? (await import("@/data/gallery.fr.json")).default 
+    : (await import("@/data/gallery.en.json")).default;
+
+  const t = await getTranslations({ locale, namespace: 'Gallery' });
 
   return (
     <div className="min-h-screen px-6 py-24 md:px-16 lg:px-24 max-w-5xl mx-auto">
       <header className="mb-16 border-b pb-8">
         <h1 className="text-4xl md:text-5xl font-serif font-bold tracking-tight mb-6">
-          {t("gallery")}
+          {t("title")}
         </h1>
         <p className="text-lg md:text-xl font-light text-muted-foreground leading-relaxed max-w-2xl">
-          Moments from conferences, seminars, and academic events I have participated in.
+          {t("description")}
         </p>
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {galleryData.map((event) => {
+        {galleryData.map((event: any) => {
           const coverImage = event.coverImage || ((event as any).images && (event as any).images.length > 0 ? (event as any).images[0] : null);
 
           return (
@@ -71,7 +74,7 @@ export default function GalleryPage() {
                     <MapPin className="w-3.5 h-3.5" /> {event.location}
                   </span>
                   <span className="text-sm font-medium text-accent flex items-center gap-1 group-hover:gap-2 transition-all">
-                    Read more <ArrowRight className="w-4 h-4" />
+                    {t("readMore")} <ArrowRight className="w-4 h-4" />
                   </span>
                 </div>
               </div>

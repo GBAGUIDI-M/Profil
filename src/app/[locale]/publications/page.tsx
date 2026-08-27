@@ -1,5 +1,3 @@
-import { useTranslations } from "next-intl";
-import publicationsData from "@/data/publications.json";
 import { getTranslations } from "next-intl/server";
 import { FileText, ExternalLink } from "lucide-react";
 
@@ -9,20 +7,27 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return { title: `MD.G | ${t('publications')}` };
 }
 
-export default function Publications() {
+export default async function Publications({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const publicationsData = locale === 'fr' 
+    ? (await import("@/data/publications.fr.json")).default 
+    : (await import("@/data/publications.en.json")).default;
+
+  const t = await getTranslations({ locale, namespace: 'Publications' });
+
   return (
     <div className="min-h-screen px-6 py-24 md:px-16 lg:px-24 max-w-5xl mx-auto">
       <header className="mb-16">
         <h1 className="text-4xl md:text-5xl font-serif font-bold tracking-tight mb-6">
-          Publications
+          {t("title")}
         </h1>
         <p className="text-lg md:text-xl font-light text-muted-foreground leading-relaxed max-w-2xl">
-          Academic papers, theses, and preprints across pure mathematics, biostatistics, and applied computational modeling.
+          {t("description")}
         </p>
       </header>
 
       <div className="space-y-6">
-        {publicationsData.map((pub) => (
+        {publicationsData.map((pub: any) => (
           <article 
             key={pub.id} 
             className="p-6 md:p-8 rounded-xl border bg-card hover:border-accent/30 transition-colors flex flex-col md:flex-row gap-6"

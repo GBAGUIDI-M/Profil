@@ -19,5 +19,48 @@
     "description": "Téléchargez mon curriculum vitae dans la langue de votre choix.",
     "downloadEn": "Télécharger le CV (Anglais)",
     "downloadFr": "Télécharger le CV (Français)"
+  },
+  "About": {
+    "whoIAm": "Qui je suis",
+    "description": "Je suis un mathématicien et chercheur qui fait le lien entre les mathématiques pures rigoureuses et les problèmes appliqués critiques. Mes travaux portent sur les opérateurs pseudo-différentiels, l'analyse microlocale et la modélisation biomathématique des systèmes complexes.",
+    "academicJourney": "Parcours Académique",
+    "experience": "Expérience"
+  },
+  "Projects": {
+    "title": "Projets de Recherche",
+    "description": "Notes de laboratoire documentant mes investigations actives en mathématiques pures, biomathématiques et sciences informatiques.",
+    "mathFramework": "Cadre Mathématique"
+  },
+  "Research": {
+    "title": "Carte de Recherche",
+    "description": "Une vue interconnectée de mes domaines de recherche mathématique et informatique. Sélectionnez un domaine pour explorer sa topologie.",
+    "areas": {
+      "analysis": "Analyse Mathématique",
+      "analysisTopics": ["Équations aux Dérivées Partielles", "Analyse Fonctionnelle", "Théorie des Opérateurs", "Théorie Spectrale"],
+      "microlocal": "Microlocal & Pseudo-Différentiel",
+      "microlocalTopics": ["Opérateurs pseudo-différentiels", "Calcul de Hörmander", "Paramétrices", "Classes de symboles"],
+      "biomath": "Biomathématiques",
+      "biomathTopics": ["Modélisation épidémiologique", "Systèmes dynamiques", "Biologie mathématique", "Modélisation spatiale"],
+      "ai": "Informatique & IA",
+      "aiTopics": ["Apprentissage automatique", "Calcul scientifique", "IA pour les mathématiques", "Modélisation écologique"]
+    }
+  },
+  "Gallery": {
+    "title": "Galerie & Blog",
+    "description": "Moments de conférences, séminaires et événements académiques auxquels j'ai participé.",
+    "readMore": "Lire la suite",
+    "back": "Retour à la Galerie",
+    "photoGallery": "Galerie de photos",
+    "viewFullscreen": "Voir en plein écran",
+    "close": "Fermer (Échap)"
+  },
+  "Contact": {
+    "title": "Ouvrir une discussion",
+    "description": "Je suis actuellement ouvert aux collaborations de recherche et aux discussions académiques à la croisée des mathématiques et de l'informatique.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "pdfDocEn": "Document PDF",
+    "pdfDocFr": "Document PDF"
   }
 }

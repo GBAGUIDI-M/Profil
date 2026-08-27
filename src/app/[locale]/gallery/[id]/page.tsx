@@ -1,4 +1,3 @@
-import galleryData from "@/data/gallery.json";
 import Image from "next/image";
 import { Link } from "@/routing";
 import { notFound } from "next/navigation";
@@ -9,15 +8,23 @@ import path from "path";
 import ImageGallery from "@/components/ImageGallery";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; id: string }> }) {
-  const { id } = await params;
-  const event = galleryData.find((e) => e.id === id);
+  const { locale, id } = await params;
+  const galleryData = locale === 'fr' 
+    ? (await import("@/data/gallery.fr.json")).default 
+    : (await import("@/data/gallery.en.json")).default;
+
+  const event = galleryData.find((e: any) => e.id === id);
   if (!event) return { title: 'Not Found' };
   return { title: `MD.G | ${event.title}` };
 }
 
 export default async function GalleryDetailPage({ params }: { params: Promise<{ locale: string; id: string }> }) {
-  const { id } = await params;
-  const event = galleryData.find((e) => e.id === id);
+  const { locale, id } = await params;
+  const galleryData = locale === 'fr' 
+    ? (await import("@/data/gallery.fr.json")).default 
+    : (await import("@/data/gallery.en.json")).default;
+    
+  const event = galleryData.find((e: any) => e.id === id);
 
   if (!event) {
     notFound();
@@ -36,13 +43,15 @@ export default async function GalleryDetailPage({ params }: { params: Promise<{ 
     }
   }
 
+  const t = await getTranslations({ locale, namespace: 'Gallery' });
+
   return (
     <div className="min-h-screen px-6 py-24 md:px-16 lg:px-24 max-w-4xl mx-auto">
       <Link 
         href="/gallery" 
         className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-accent transition-colors mb-12"
       >
-        <ArrowLeft className="w-4 h-4" /> Back to Gallery
+        <ArrowLeft className="w-4 h-4" /> {t("back")}
       </Link>
 
       <header className="mb-12">
@@ -58,7 +67,7 @@ export default async function GalleryDetailPage({ params }: { params: Promise<{ 
       </header>
 
       <article className="prose prose-lg dark:prose-invert max-w-none mb-20 text-muted-foreground font-light leading-relaxed">
-        {event.content.split('\n').map((paragraph, idx) => (
+        {event.content.split('\n').map((paragraph: string, idx: number) => (
           <p key={idx} className="mb-6">{paragraph}</p>
         ))}
       </article>

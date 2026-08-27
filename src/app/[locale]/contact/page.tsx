@@ -10,16 +10,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default function Contact() {
   const tCV = useTranslations("CV");
+  const t = useTranslations("Contact");
 
   return (
     <div className="min-h-screen px-6 py-24 md:px-16 lg:px-24 flex items-center justify-center max-w-4xl mx-auto">
       <div className="w-full text-center">
         <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight mb-8">
-          Open a conversation
+          {t("title")}
         </h1>
         
         <p className="text-lg md:text-xl font-light text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-16">
-          I am currently open to research collaborations and academic discussions bridging mathematics and computation.
+          {t("description")}
         </p>
         
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 mb-20">
@@ -30,7 +31,7 @@ export default function Contact() {
             <div className="w-16 h-16 rounded-full bg-card border flex items-center justify-center group-hover:border-accent group-hover:shadow-lg transition-all">
               <Mail className="w-6 h-6" />
             </div>
-            <span className="text-sm font-medium">Email</span>
+            <span className="text-sm font-medium">{t("email")}</span>
           </a>
           
           <a 
@@ -42,7 +43,7 @@ export default function Contact() {
             <div className="w-16 h-16 rounded-full bg-card border flex items-center justify-center group-hover:border-accent group-hover:shadow-lg transition-all">
               <Linkedin className="w-6 h-6" />
             </div>
-            <span className="text-sm font-medium">LinkedIn</span>
+            <span className="text-sm font-medium">{t("linkedin")}</span>
           </a>
           
           <a 
@@ -54,7 +55,7 @@ export default function Contact() {
             <div className="w-16 h-16 rounded-full bg-card border flex items-center justify-center group-hover:border-accent group-hover:shadow-lg transition-all">
               <Github className="w-6 h-6" />
             </div>
-            <span className="text-sm font-medium">GitHub</span>
+            <span className="text-sm font-medium">{t("github")}</span>
           </a>
         </div>
         
@@ -72,7 +73,7 @@ export default function Contact() {
             <span className="text-base font-medium tracking-wide">
               {tCV("downloadEn")}
             </span>
-            <span className="text-xs text-muted-foreground mt-1">PDF Document</span>
+            <span className="text-xs text-muted-foreground mt-1">{t("pdfDocEn")}</span>
           </a>
 
           <a 
@@ -88,7 +89,7 @@ export default function Contact() {
             <span className="text-base font-medium tracking-wide">
               {tCV("downloadFr")}
             </span>
-            <span className="text-xs text-muted-foreground mt-1">Document PDF</span>
+            <span className="text-xs text-muted-foreground mt-1">{t("pdfDocFr")}</span>
           </a>
         </div>
       </div>

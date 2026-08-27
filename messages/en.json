@@ -19,5 +19,48 @@
     "description": "Download my curriculum vitae in your preferred language.",
     "downloadEn": "Download CV (English)",
     "downloadFr": "Download CV (French)"
+  },
+  "About": {
+    "whoIAm": "Who I am",
+    "description": "I am a mathematician and researcher bridging the gap between rigorous pure mathematics and critical applied problems. My work spans pseudo-differential operators, microlocal analysis, and biomathematical modeling of complex systems.",
+    "academicJourney": "Academic Journey",
+    "experience": "Experience"
+  },
+  "Projects": {
+    "title": "Research Projects",
+    "description": "Laboratory notebook entries documenting active investigations across pure mathematics, biomathematics, and computational science.",
+    "mathFramework": "Mathematical Framework"
+  },
+  "Research": {
+    "title": "Research Map",
+    "description": "An interconnected view of my mathematical and computational research domains. Select an area to explore its topology.",
+    "areas": {
+      "analysis": "Mathematical Analysis",
+      "analysisTopics": ["Partial Differential Equations", "Functional Analysis", "Operator Theory", "Spectral Theory"],
+      "microlocal": "Microlocal & Pseudo-Differential",
+      "microlocalTopics": ["Pseudo-differential operators", "Hörmander calculus", "Parametrices", "Symbol classes"],
+      "biomath": "Biomathematics",
+      "biomathTopics": ["Epidemiological modelling", "Dynamical systems", "Mathematical biology", "Spatial modelling"],
+      "ai": "Computational & AI",
+      "aiTopics": ["Machine learning", "Scientific computing", "AI for mathematics", "Ecological modelling"]
+    }
+  },
+  "Gallery": {
+    "title": "Gallery & Blog",
+    "description": "Moments from conferences, seminars, and academic events I have participated in.",
+    "readMore": "Read more",
+    "back": "Back to Gallery",
+    "photoGallery": "Photo Gallery",
+    "viewFullscreen": "View Fullscreen",
+    "close": "Close (Esc)"
+  },
+  "Contact": {
+    "title": "Open a conversation",
+    "description": "I am currently open to research collaborations and academic discussions bridging mathematics and computation.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "pdfDocEn": "PDF Document",
+    "pdfDocFr": "Document PDF"
   }
 }

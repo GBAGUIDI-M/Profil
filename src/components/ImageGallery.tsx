@@ -3,9 +3,11 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function ImageGallery({ images, title }: { images: string[], title: string }) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const t = useTranslations("Gallery");
 
   // Close lightbox on Escape key
   useEffect(() => {
@@ -32,7 +34,7 @@ export default function ImageGallery({ images, title }: { images: string[], titl
       <section>
         <h2 className="text-2xl font-serif font-bold mb-8 flex items-center gap-4">
           <span className="w-8 h-[1px] bg-border block"></span>
-          Photo Gallery
+          {t("photoGallery")}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {images.map((img, imgIdx) => (
@@ -43,7 +45,7 @@ export default function ImageGallery({ images, title }: { images: string[], titl
             >
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 z-10 transition-colors duration-500 flex items-center justify-center">
                 <span className="opacity-0 group-hover:opacity-100 text-white font-medium bg-black/40 px-4 py-2 rounded-full backdrop-blur-sm transition-opacity duration-300 transform scale-95 group-hover:scale-100">
-                  View Fullscreen
+                  {t("viewFullscreen")}
                 </span>
               </div>
               <Image 
@@ -70,7 +72,7 @@ export default function ImageGallery({ images, title }: { images: string[], titl
               e.stopPropagation();
               setSelectedImage(null);
             }}
-            title="Close (Esc)"
+            title={t("close")}
           >
             <X className="w-6 h-6" />
           </button>
