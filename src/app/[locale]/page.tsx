@@ -32,9 +32,13 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 z-10 w-full max-w-7xl mx-auto">
           <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight text-foreground mb-6">
+            <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight text-foreground mb-2">
               {t("heroTitle")}
             </h1>
+            
+            <h2 className="text-3xl md:text-5xl font-sans italic font-light tracking-wide text-[#b7410e] dark:text-[#d35f3c] mb-8">
+              {t("heroProfession")}
+            </h2>
             
             <p className="text-xl md:text-3xl font-light text-muted-foreground leading-relaxed mb-4">
               {t("heroSubtitle")}
