@@ -54,7 +54,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
              <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border border-border p-2">
                 <div className="relative w-full h-full rounded-full overflow-hidden">
-                   <Image src="/Mannonde.png" alt="Mannondé D. Gbaguidi" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" priority sizes="(max-width: 768px) 256px, 384px" />
+                   <Image src="/Mannonde.png" alt="Mannondé D. Gbaguidi" fill className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-700" priority sizes="(max-width: 768px) 256px, 384px" />
                 </div>
              </div>
           </div>
