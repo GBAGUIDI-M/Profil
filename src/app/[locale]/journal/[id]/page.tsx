@@ -10,8 +10,8 @@ import ImageGallery from "@/components/ImageGallery";
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; id: string }> }) {
   const { locale, id } = await params;
   const galleryData = locale === 'fr' 
-    ? (await import("@/data/gallery.fr.json")).default 
-    : (await import("@/data/gallery.en.json")).default;
+    ? (await import("@/data/journal.fr.json")).default 
+    : (await import("@/data/journal.en.json")).default;
 
   const event = galleryData.find((e: any) => e.id === id);
   if (!event) return { title: 'Not Found' };
@@ -21,8 +21,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function GalleryDetailPage({ params }: { params: Promise<{ locale: string; id: string }> }) {
   const { locale, id } = await params;
   const galleryData = locale === 'fr' 
-    ? (await import("@/data/gallery.fr.json")).default 
-    : (await import("@/data/gallery.en.json")).default;
+    ? (await import("@/data/journal.fr.json")).default 
+    : (await import("@/data/journal.en.json")).default;
     
   const event = galleryData.find((e: any) => e.id === id);
 
@@ -48,7 +48,7 @@ export default async function GalleryDetailPage({ params }: { params: Promise<{ 
   return (
     <div className="min-h-screen px-6 py-24 md:px-16 lg:px-24 max-w-4xl mx-auto">
       <Link 
-        href="/gallery" 
+        href="/journal" 
         className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-accent transition-colors mb-12"
       >
         <ArrowLeft className="w-4 h-4" /> {t("back")}
@@ -65,6 +65,12 @@ export default async function GalleryDetailPage({ params }: { params: Promise<{ 
         </h1>
         <div className="w-24 h-1 bg-accent rounded-full"></div>
       </header>
+
+      {event.coverImage && (
+        <div className="relative w-full aspect-[2/1] md:aspect-[3/1] mb-16 overflow-hidden bg-muted">
+          <Image src={event.coverImage} alt={event.title} fill className="object-cover" />
+        </div>
+      )}
 
       <article className="prose prose-lg dark:prose-invert max-w-none mb-20 text-muted-foreground font-light leading-relaxed">
         {event.content.split('\n').map((paragraph: string, idx: number) => (

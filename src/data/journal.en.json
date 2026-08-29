@@ -1,0 +1,56 @@
+[
+  {
+    "id": "wikimedia-2026",
+    "title": "AIMS House of Science — Wikimedia Edit-a-Thon Series",
+    "type": "Academic Stories",
+    "date": "July 2026",
+    "location": "Muizenberg, South Africa",
+    "summary": "Participated in the Wikimedia Edit-a-Thon workshop series to amplify the visibility of African scientists, especially female mathematicians, on Wikipedia.",
+    "content": "\"Amplifying African Knowledge in the Digital Age\" — Muizenberg, South Africa (July 2026)\n\nIn July 2026, I volunteered to participate in the Wikimedia Edit-a-Thon workshop series, organized by the AIMS South Africa House of Science, under the direction of Dr. Rejoyce Gavhi-Molefe (House of Science Manager), with the support of Tochi Precious (co-founder of the Igbo Wikimedians User Group and global coordinator of the Wikimedia Language Diversity Hub) and Eugene Agbor Egbe (researcher at Paderborn University, Germany).\n\nThis project aims to address the underrepresentation of African scientists on Wikipedia, one of the world's most influential digital platforms. The initiative primarily focuses on African female and male mathematicians, by creating and improving their Wikipedia articles, in order to preserve and amplify the visibility of African scientific knowledge in global digital knowledge systems.\n\nMy contribution: as a participant, I took part in the first session of the workshop (July 11, 2026, AIMS Main Lab), dedicated to discovering the Wikimedia ecosystem, creating a Wikipedia account, and making initial guided modifications (\"edits\"). The program also involved:\n- nominating at least four notable African mathematical scientists (including at least three women), originating from my home country or the African continent;\n- conducting documentary research to verify the notability of these figures based on reliable and published sources;\n- training in Wikipedia editing, academic writing, and science communication;\n- contributing to the creation of Wikipedia profiles unveiled during an international event celebrating mathematics and women in science.",
+    "coverImage": "/wikimedia-2026/1.jpg",
+    "imageFolder": "wikimedia-2026"
+  },
+  {
+    "id": "misg-2026",
+    "title": "Mathematics in Industry Study Group (MISG) 2026",
+    "type": "Academic Stories",
+    "date": "January 14–23, 2026",
+    "location": "Johannesburg, South Africa",
+    "summary": "Participated in the MISG 2026 at Wits University to solve real-world industrial problems through mathematical modeling.",
+    "content": "Selected as part of the AIMS South Africa Master's in Mathematical Sciences cohort by Dr. Jacques Rabie (Mathematics Innovation Manager), I had the opportunity to participate in the Mathematics in Industry Study Group (MISG) 2026, held at the University of the Witwatersrand (Wits) in Johannesburg, from January 19 to 23, 2026.\n\nThe MISG is a five-day collaborative workshop bringing together academic researchers and postgraduate students with industry representatives, around concrete research problems submitted by local companies. My participation was preceded by a preparatory Graduate Modelling Camp (January 14–17, 2026), held at the same venue, aimed at giving students additional practical experience in mathematical modeling applied to industrial problems.\n\nThe work done: during the study group, I contributed to solving industrial problems through mathematical modeling, notably on:\n- corrosion inhibition, by modeling the chemical and physical mechanisms to slow down the degradation of metallic materials;\n- deep-sea mining, by modeling the processes related to the extraction of underwater mineral resources.\n\nAt the end of the MISG, I wrote a report detailing the modeling work done, which was evaluated by the organizers, and then presented during a session dedicated to AIMS. This participation academically counted for two review courses as part of my Master's.",
+    "coverImage": "/misg-2026/1.jpg",
+    "imageFolder": "misg-2026"
+  },
+  {
+    "id": "itt-2026",
+    "title": "AIMS South Africa — Integrative Think Tank (ITT) 2026",
+    "type": "Academic Stories",
+    "date": "April 13–17, 2026",
+    "location": "AIMS South Africa",
+    "summary": "Participated in the Integrative Think Tank (ITT) 2026. Won 1st prize with the team on a sports analytics project in partnership with Laduma Analytics.",
+    "content": "🏆 1st Prize — R1 500\n\nAs part of my Master's in Mathematical Sciences at the African Institute for Mathematical Sciences (AIMS) South Africa, I participated in the Integrative Think Tank (ITT) 2026, a 5-day hackathon (April 13–17, 2026) organized by Dr. Jacques Rabie, Mathematics Innovation Manager at AIMS. The ITT brings together Master's students and industrial partners to solve concrete R&D problems in teams, with final presentations (\"pitches\") judged and rewarded with cash prizes.\n\nThe Team:\n- Mannondé Gbaguidi\n- Prince Anani\n- Solomon Aniekan Charlie\n- Vanessa Kouam Kenmogne\n- Hassana Alhassan\n- Lavender Akinyi Ayako\n\nThe Project: in partnership with Laduma Analytics, a South African company specializing in sports analytics, our team developed a predictive model for football match outcomes, applied to the South African Premier Soccer League (PSL). The model, trained on data from the 2024/25 season and tested under real conditions (out-of-sample) on the 2025/26 season, combined machine learning (Random Forest) and feature engineering to predict match results.\n\nResult: our final presentation won the 1st prize (R1 500) of the hackathon. Following the event, we developed a complete web platform for the project (WebUnderscore) and shared it with Laduma Analytics, who were impressed by the work done and proposed a follow-up collaboration to explore the possibilities of developing and scaling the model.",
+    "coverImage": "/itt-2026/1.jpg",
+    "imageFolder": "itt-2026"
+  },
+  {
+    "id": "ai-research-foundations-2026",
+    "title": "AI Research Foundations for Higher Education Programme — Pilot Workshop 2026",
+    "type": "Conferences",
+    "date": "2026",
+    "location": "Muizenberg, South Africa",
+    "summary": "Participation in the Pilot Workshop of the AI Research Foundations for Higher Education program organized by AIMS South Africa and Google DeepMind.",
+    "content": "In 2026, I had the opportunity to participate in the Pilot Workshop of the AI Research Foundations for Higher Education program, organized in Muizenberg by AIMS South Africa (African Institute for Mathematical Sciences), in partnership with Google DeepMind, Google.org, the FATE Foundation, as well as UCL Computer Science and the UCL Centre for AI.\n\nThis \"Train the Trainer\" type program allowed me to deepen both the technical content of the AI Research Foundations course designed by Google DeepMind, and the pedagogical practices necessary to effectively transmit this knowledge in higher education. Beyond the technical content, the emphasis was placed on innovative teaching approaches, designed to make AI accessible to a diverse academic audience.\n\nBeyond the working sessions, it was also an opportunity to meet other trainers and researchers from different backgrounds, in a studious and warm setting, conducive to discussion.",
+    "coverImage": "/ai.jpg"
+  },
+  {
+    "id": "icammda-2026",
+    "title": "ICAMMDA Workshop on Machine Learning Modelling",
+    "type": "Conferences",
+    "date": "August 3–21, 2026",
+    "location": "Federal University Oye-Ekiti (FUOYE), Nigeria",
+    "summary": "Participated in the ICAMMDA Workshop with Prof. Christopher Thron as guest speaker.",
+    "content": "ICAMMDA Workshop on Machine Learning Modelling, held at the Federal University Oye-Ekiti (FUOYE) in Nigeria from August 3 to 21, 2026. The event featured Professor Christopher Thron (Texas A&M University-Central Texas) as the invited speaker. We explored the foundations of ML models, particularly tree-based models, as well as the formulation of research questions and the development of effective modeling strategies.",
+    "coverImage": "/seminaire-icammda/IMG-20260806-WA0223.jpg",
+    "imageFolder": "seminaire-icammda"
+  }
+]

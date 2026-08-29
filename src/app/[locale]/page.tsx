@@ -1,170 +1,276 @@
 import { getTranslations } from "next-intl/server";
-import HeroCanvas from "@/components/HeroCanvas";
-import { Link } from "@/routing";
-import { ArrowRight, Code2, Brain, Award, ChevronDown } from "lucide-react";
 import Image from "next/image";
+import HeroCanvas from "@/components/HeroCanvas";
+import MathVisualization from "@/components/MathVisualization";
+import { Link } from "@/routing";
+import { ChevronDown } from "lucide-react";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Home' });
   return {
     title: t('heroTitle'),
-    description: t('heroDescription'),
+    description: t('heroSubtitle'),
   };
 }
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  
-  const cvData = locale === 'fr' 
-    ? (await import("@/data/cv.fr.json")).default 
-    : (await import("@/data/cv.en.json")).default;
-
   const t = await getTranslations({ locale, namespace: 'Home' });
-  const tNav = await getTranslations({ locale, namespace: 'Navigation' });
 
   return (
-    <div className="relative flex flex-col">
-      
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-16 overflow-hidden">
-        <HeroCanvas />
-        
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 z-10 w-full max-w-7xl mx-auto">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight text-foreground mb-2">
+    <div className="relative flex flex-col min-h-screen">
+      {/* 1. HERO SECTION */}
+      <section className="relative min-h-screen flex items-center px-6 md:px-16 overflow-hidden">
+        <div className="absolute inset-y-0 right-0 w-full lg:w-1/2 pointer-events-none z-0">
+           <HeroCanvas />
+        </div>
+        <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center pt-24 lg:pt-0">
+          <div className="max-w-2xl lg:w-1/2 lg:pr-12 mb-12 lg:mb-0">
+            <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight text-foreground mb-4 leading-tight">
               {t("heroTitle")}
             </h1>
-            
-            <h2 className="text-3xl md:text-5xl font-sans italic font-light tracking-wide text-[#b7410e] dark:text-[#d35f3c] mb-8">
+            <h2 className="text-xl md:text-2xl font-sans tracking-widest text-muted-foreground uppercase mb-8">
               {t("heroProfession")}
             </h2>
-            
-            <p className="text-xl md:text-3xl font-light text-muted-foreground leading-relaxed mb-4">
+            <p className="text-sm md:text-base font-semibold tracking-widest text-accent uppercase mb-6">
+              {t("heroAreas")}
+            </p>
+            <p className="text-xl md:text-2xl font-serif italic font-light text-foreground mb-8 border-l-2 border-accent pl-6">
               {t("heroSubtitle")}
             </p>
-            
-            <p className="text-base md:text-lg text-muted-foreground mb-12">
-              {t("heroDescription")}
+            <p className="text-lg text-muted-foreground mb-12">
+              {t("heroTagline")}
             </p>
-            
-            <div className="flex flex-wrap gap-6">
-              <Link 
-                href="/research" 
-                className="group flex items-center gap-2 text-sm font-medium tracking-wide uppercase hover:text-accent transition-colors"
-              >
-                {tNav("research")}
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <div className="flex flex-wrap gap-8">
+              <Link href="/research" className="group flex items-center gap-3 text-sm font-semibold tracking-widest uppercase hover:text-accent transition-colors">
+                [ {t("exploreResearch")} ]
               </Link>
-              <Link 
-                href="/publications" 
-                className="group flex items-center gap-2 text-sm font-medium tracking-wide uppercase hover:text-accent transition-colors"
-              >
-                {tNav("publications")}
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <Link 
-                href="/gallery" 
-                className="group flex items-center gap-2 text-sm font-medium tracking-wide uppercase hover:text-accent transition-colors"
-              >
-                {tNav("gallery")}
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <Link href="/cv" className="group flex items-center gap-3 text-sm font-semibold tracking-widest uppercase hover:text-accent transition-colors">
+                [ {t("viewCV")} ]
               </Link>
             </div>
           </div>
-
-          <div className="relative w-64 h-80 md:w-80 md:h-96 lg:w-96 lg:h-[30rem] flex-shrink-0">
-            <div className="absolute inset-0 rounded-3xl bg-accent/20 blur-3xl animate-pulse"></div>
-            <Image
-              src="/Mannonde.png"
-              alt="Mannondé D. GBAGUIDI"
-              fill
-              sizes="(max-width: 768px) 100vw, 33vw"
-              className="object-cover rounded-3xl border border-border/50 shadow-2xl z-10 relative"
-              priority
-            />
-          </div>
-        </div>
-
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-          <ChevronDown className="w-8 h-8 text-muted-foreground/50" />
-        </div>
-      </section>
-
-      {/* Profile Summary Section */}
-      <section className="py-24 px-6 md:px-16 bg-muted/30 relative">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-10 text-center flex items-center justify-center gap-4">
-            <span className="w-12 h-[1px] bg-accent"></span>
-            {t("profileTitle")}
-            <span className="w-12 h-[1px] bg-accent"></span>
-          </h2>
-          <div className="bg-card p-8 md:p-12 rounded-3xl border shadow-xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-            <p className="text-lg md:text-xl leading-relaxed text-muted-foreground relative z-10 font-light">
-              {cvData.profile}
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Expertise & Skills Section */}
-      <section className="py-24 px-6 md:px-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-16 text-center">
-          {t("skillsTitle")}
-        </h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {cvData.skills.map((skillGroup: any, idx: number) => (
-            <div key={idx} className="group p-8 rounded-3xl border bg-card hover:border-accent/50 transition-colors">
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  {idx === 0 ? <Code2 className="w-6 h-6 text-accent" /> : <Brain className="w-6 h-6 text-accent" />}
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+             <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border border-border p-2">
+                <div className="relative w-full h-full rounded-full overflow-hidden">
+                   <Image src="/Mannonde.png" alt="Mannondé D. Gbaguidi" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" priority sizes="(max-width: 768px) 256px, 384px" />
                 </div>
-                <h3 className="text-xl font-serif font-semibold">{skillGroup.category}</h3>
-              </div>
-              <ul className="space-y-4">
-                {skillGroup.items.map((item: string, i: number) => (
-                  <li key={i} className="flex items-start gap-3 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent/50 mt-2 flex-shrink-0"></span>
-                    <span className="leading-relaxed">{item}</span>
-                  </li>
-                ))}
+             </div>
+          </div>
+        </div>
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+          <ChevronDown className="w-6 h-6 text-muted-foreground/50" />
+        </div>
+      </section>
+
+      {/* 2. RESEARCH IDENTITY SECTION */}
+      <section className="relative py-32 px-6 md:px-16 border-t border-border">
+        <MathVisualization />
+        <div className="max-w-4xl mx-auto relative z-10">
+          <h2 className="text-sm font-bold tracking-widest text-accent uppercase mb-12">
+            {t("researchTitle")}
+          </h2>
+          <p className="text-3xl md:text-5xl font-serif leading-tight text-foreground mb-20">
+            {t("researchIdentity")}
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
+            <div>
+              <h3 className="text-2xl font-serif font-bold mb-6">Mathematical Analysis & Microlocal Analysis</h3>
+              <ul className="space-y-3 text-muted-foreground font-light">
+                <li>Functional Analysis</li>
+                <li>Operator Theory</li>
+                <li>Partial Differential Equations</li>
+                <li>Pseudo-Differential Operators</li>
+                <li>Symbolic Calculus</li>
               </ul>
             </div>
-          ))}
+            <div>
+              <h3 className="text-2xl font-serif font-bold mb-6 border-l-2 border-accent pl-4">Mathematical Modeling & Computing</h3>
+              <ul className="space-y-3 text-muted-foreground font-light">
+                <li>Dynamical Systems</li>
+                <li>Mathematical Epidemiology</li>
+                <li>Biostatistics</li>
+                <li>Scientific Computing (Python, R, C++)</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Scholarships & Awards */}
-      <section className="py-24 px-6 md:px-16 bg-accent/5 border-y relative overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px] opacity-20"></div>
-        <div className="max-w-6xl mx-auto relative z-10">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-16 text-center flex items-center justify-center gap-3">
-            <Award className="w-8 h-8 text-accent" />
-            {t("scholarshipsTitle")}
+      {/* 3. FEATURED RESEARCH */}
+      <section className="py-32 px-6 md:px-16 bg-muted/20 border-t border-border">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-sm font-bold tracking-widest text-accent uppercase mb-16">
+            {t("featuredResearchTitle")}
           </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {cvData.scholarships.map((award: any, idx: number) => (
-              <div key={idx} className="p-8 rounded-2xl bg-card border shadow-lg hover:-translate-y-2 transition-transform duration-300">
-                <div className="text-xs font-bold tracking-widest text-accent uppercase mb-3">{award.date}</div>
-                <h3 className="text-xl font-serif font-bold mb-4">{award.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{award.description}</p>
+          <div className="flex flex-col gap-12">
+            {/* Project 1 */}
+            <Link href="/projects" className="group block border-b border-border pb-12 hover:border-foreground transition-colors">
+              <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-4 mb-4">
+                <h3 className="text-3xl md:text-5xl font-serif group-hover:text-accent transition-colors">Pseudo-Differential Operators & Microlocal Analysis</h3>
+                <span className="text-sm tracking-widest uppercase text-muted-foreground whitespace-nowrap">MSc Research · 2026</span>
               </div>
-            ))}
-          </div>
-
-          <div className="mt-16 text-center">
-            <Link 
-              href="/about" 
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-foreground text-background font-medium hover:scale-105 transition-transform"
-            >
-              {t("exploreCV")} <ArrowRight className="w-4 h-4" />
+              <p className="text-xl font-light text-muted-foreground max-w-3xl">
+                Investigating analytical frameworks underlying differential equations using Hörmander's calculus and wave-front sets.
+              </p>
+            </Link>
+            {/* Project 2 */}
+            <Link href="/projects" className="group block border-b border-border pb-12 hover:border-foreground transition-colors">
+              <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-4 mb-4">
+                <h3 className="text-3xl md:text-5xl font-serif group-hover:text-accent transition-colors">SEIR-B Cholera Model</h3>
+                <span className="text-sm tracking-widest uppercase text-muted-foreground whitespace-nowrap">MSc Biostatistics</span>
+              </div>
+              <p className="text-xl font-light text-muted-foreground max-w-3xl">
+                Structural robustness and sensitivity analysis of epidemiological dynamics with waterborne transmission.
+              </p>
+            </Link>
+            {/* Project 3 */}
+            <Link href="/projects" className="group block pb-4 hover:border-foreground transition-colors">
+              <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-4 mb-4">
+                <h3 className="text-3xl md:text-5xl font-serif group-hover:text-accent transition-colors">Non-Local Multi-Strain Epidemic Model</h3>
+                <span className="text-sm tracking-widest uppercase text-muted-foreground whitespace-nowrap">Mathematical Biology</span>
+              </div>
+              <p className="text-xl font-light text-muted-foreground max-w-3xl">
+                Integro-differential structures modelling spatial coexistence and nonlocal dispersion in multi-strain outbreaks.
+              </p>
             </Link>
           </div>
         </div>
       </section>
+
+      {/* 4. RESEARCH TRAJECTORY */}
+      <section className="py-32 px-6 md:px-16 border-t border-border">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-sm font-bold tracking-widest text-accent uppercase mb-12">
+            {t("trajectoryTitle")}
+          </h2>
+          <div className="flex flex-wrap justify-center items-center gap-4 text-xl md:text-2xl font-serif text-muted-foreground">
+             <span className="hover:text-foreground transition-colors">Fundamental Mathematics</span>
+             <span className="text-accent">→</span>
+             <span className="hover:text-foreground transition-colors">Pure & Applied Mathematics</span>
+             <span className="text-accent">→</span>
+             <span className="hover:text-foreground transition-colors">Biostatistics</span>
+             <span className="text-accent">→</span>
+             <span className="hover:text-foreground transition-colors">Mathematical Sciences at AIMS</span>
+             <span className="text-accent">→</span>
+             <span className="text-foreground border-b border-foreground pb-1">PDEs & Microlocal Analysis</span>
+             <span className="text-accent">→</span>
+             <span className="font-bold text-foreground">PhD Research</span>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. SELECTED ACHIEVEMENTS */}
+      <section className="py-32 px-6 md:px-16 bg-muted/20 border-t border-border">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-sm font-bold tracking-widest text-accent uppercase mb-16">
+            {t("achievementsTitle")}
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
+            <div>
+               <div className="text-xs tracking-widest text-accent mb-2">2026</div>
+               <h3 className="text-xl font-serif font-bold mb-2">Academic Excellence AIMS South Africa</h3>
+               <p className="text-muted-foreground font-light">MSc in Mathematical Sciences</p>
+            </div>
+            <div>
+               <div className="text-xs tracking-widest text-accent mb-2">2025</div>
+               <h3 className="text-xl font-serif font-bold mb-2">Mastercard Foundation Scholar</h3>
+               <p className="text-muted-foreground font-light">Prestigious scholarship awarded for academic excellence and leadership.</p>
+            </div>
+            <div>
+               <div className="text-xs tracking-widest text-accent mb-2">2023</div>
+               <h3 className="text-xl font-serif font-bold mb-2">World Bank Scholarship</h3>
+               <p className="text-muted-foreground font-light">Centre of Excellence in Mathematical Sciences and Applications.</p>
+            </div>
+            <div>
+               <div className="text-xs tracking-widest text-accent mb-2">2023</div>
+               <h3 className="text-xl font-serif font-bold mb-2">DAAD Scholarship</h3>
+               <p className="text-muted-foreground font-light">Academic excellence scholarship for research in biostatistics.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. RESEARCH VISION */}
+      <section className="relative py-32 px-6 md:px-16 border-t border-border">
+        <MathVisualization />
+        <div className="max-w-4xl mx-auto relative z-10 text-center">
+          <h2 className="text-sm font-bold tracking-widest text-accent uppercase mb-12">
+            {t("visionTitle")}
+          </h2>
+          <p className="text-2xl md:text-4xl font-serif leading-relaxed text-foreground mb-16">
+            {t("visionDescription")}
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+             <div className="border border-border p-8 hover:border-accent transition-colors bg-background">
+                <div className="text-3xl font-serif text-accent mb-4">01</div>
+                <h4 className="text-lg font-bold mb-2">Nonlocal PDEs</h4>
+                <p className="text-sm text-muted-foreground">Investigating analytical properties of integro-differential models.</p>
+             </div>
+             <div className="border border-border p-8 hover:border-accent transition-colors bg-background">
+                <div className="text-3xl font-serif text-accent mb-4">02</div>
+                <h4 className="text-lg font-bold mb-2">Microlocal Methods</h4>
+                <p className="text-sm text-muted-foreground">Applying pseudo-differential calculus to complex operators.</p>
+             </div>
+             <div className="border border-border p-8 hover:border-accent transition-colors bg-background">
+                <div className="text-3xl font-serif text-accent mb-4">03</div>
+                <h4 className="text-lg font-bold mb-2">Spatial Systems</h4>
+                <p className="text-sm text-muted-foreground">Mathematical modeling of spatial dynamics in biological populations.</p>
+             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. FROM THE JOURNAL */}
+      <section className="py-32 px-6 md:px-16 bg-muted/20 border-t border-border">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-baseline mb-16">
+          <h2 className="text-sm font-bold tracking-widest text-accent uppercase">
+            {t("journalTitle")}
+          </h2>
+          <Link href="/journal" className="text-sm tracking-widest hover:text-accent transition-colors border-b border-foreground hover:border-accent mt-6 md:mt-0">
+            View all entries →
+          </Link>
+        </div>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+           <Link href="/journal" className="group">
+              <div className="text-xs text-muted-foreground mb-2 tracking-widest uppercase">Research Note</div>
+              <h3 className="text-xl font-serif group-hover:text-accent transition-colors mb-4">Why pseudo-differential operators matter for PDEs</h3>
+              <div className="h-[1px] w-12 bg-border group-hover:w-full group-hover:bg-accent transition-all duration-500"></div>
+           </Link>
+           <Link href="/journal" className="group">
+              <div className="text-xs text-muted-foreground mb-2 tracking-widest uppercase">Academic Story</div>
+              <h3 className="text-xl font-serif group-hover:text-accent transition-colors mb-4">My year at AIMS South Africa</h3>
+              <div className="h-[1px] w-12 bg-border group-hover:w-full group-hover:bg-accent transition-all duration-500"></div>
+           </Link>
+           <Link href="/journal" className="group">
+              <div className="text-xs text-muted-foreground mb-2 tracking-widest uppercase">Gallery</div>
+              <h3 className="text-xl font-serif group-hover:text-accent transition-colors mb-4">Mathematical Modeling Session · 2026</h3>
+              <div className="h-[1px] w-12 bg-border group-hover:w-full group-hover:bg-accent transition-all duration-500"></div>
+           </Link>
+           <Link href="/journal" className="group">
+              <div className="text-xs text-muted-foreground mb-2 tracking-widest uppercase">Research Note</div>
+              <h3 className="text-xl font-serif group-hover:text-accent transition-colors mb-4">From mathematical modeling to microlocal analysis</h3>
+              <div className="h-[1px] w-12 bg-border group-hover:w-full group-hover:bg-accent transition-all duration-500"></div>
+           </Link>
+        </div>
+      </section>
+
+      {/* 8. CONTACT */}
+      <section className="py-32 px-6 md:px-16 border-y border-border">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-6xl font-serif font-bold mb-8">
+            {t("contactTitle")}
+          </h2>
+          <p className="text-xl text-muted-foreground font-light mb-12 max-w-2xl mx-auto">
+            I am interested in research collaborations, mathematical discussions, and interdisciplinary research involving analysis, PDEs, mathematical modeling, and scientific computing.
+          </p>
+          <Link href="/contact" className="inline-block px-12 py-4 bg-foreground text-background font-semibold tracking-widest uppercase hover:bg-accent transition-colors">
+             Contact Me
+          </Link>
+        </div>
+      </section>
+
     </div>
   );
 }

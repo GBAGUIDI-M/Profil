@@ -1,0 +1,56 @@
+[
+  {
+    "id": "wikimedia-2026",
+    "title": "AIMS House of Science — Wikimedia Edit-a-Thon Series",
+    "type": "Academic Stories",
+    "date": "Juillet 2026",
+    "location": "Muizenberg, Afrique du Sud",
+    "summary": "Participation à la série d'ateliers Wikimedia Edit-a-Thon pour amplifier la visibilité des scientifiques africains, particulièrement des mathématiciennes, sur Wikipédia.",
+    "content": "\"Amplifying African Knowledge in the Digital Age\" — Muizenberg, Afrique du Sud (Juillet 2026)\n\nEn juillet 2026, j'ai participé bénévolement à la série d'ateliers Wikimedia Edit-a-Thon, organisée par le AIMS South Africa House of Science, sous la direction de la Dr Rejoyce Gavhi-Molefe (House of Science Manager), avec le soutien de Tochi Precious (co-fondatrice du Igbo Wikimedians User Group et coordinatrice mondiale du Wikimedia Language Diversity Hub) et d'Eugene Agbor Egbe (chercheur à l'Université de Paderborn, Allemagne).\n\nCe projet vise à remédier à la sous-représentation des scientifiques africains sur Wikipédia, l'une des plateformes numériques les plus influentes au monde. L'initiative se concentre en priorité sur les mathématiciennes et mathématiciens africains, en créant et améliorant leurs articles Wikipédia, afin de préserver et amplifier la visibilité du savoir scientifique africain dans les systèmes de connaissance numériques mondiaux.\n\nMa contribution : en tant que participant, j'ai pris part à la première session de l'atelier (11 juillet 2026, AIMS Main Lab), consacrée à la découverte de l'écosystème Wikimedia, à la création d'un compte Wikipédia et à la réalisation de premières modifications (\"edits\") encadrées. Le programme impliquait également :\n- la nomination d'au moins quatre scientifiques mathématiciens africains notables (dont au moins trois femmes), originaires de mon pays d'origine ou du continent africain ;\n- des recherches documentaires pour vérifier la notoriété de ces personnalités à partir de sources fiables et publiées ;\n- une formation à l'édition Wikipédia, à la rédaction académique et à la communication scientifique ;\n- la contribution à la création de profils Wikipédia dévoilés lors d'un événement international célébrant les mathématiques et les femmes en sciences.",
+    "coverImage": "/wikimedia-2026/1.jpg",
+    "imageFolder": "wikimedia-2026"
+  },
+  {
+    "id": "misg-2026",
+    "title": "Mathematics in Industry Study Group (MISG) 2026",
+    "type": "Academic Stories",
+    "date": "14–23 Janvier 2026",
+    "location": "Johannesburg, Afrique du Sud",
+    "summary": "Participation au MISG 2026 à Wits University pour résoudre des problématiques industrielles réelles par la modélisation mathématique.",
+    "content": "Sélectionné(e) au sein de la cohorte du Master en Sciences Mathématiques d'AIMS South Africa par le Dr Jacques Rabie (Mathematics Innovation Manager), j'ai eu l'opportunité de participer au Mathematics in Industry Study Group (MISG) 2026, organisé à l'Université du Witwatersrand (Wits), à Johannesburg, du 19 au 23 janvier 2026.\n\nLe MISG est un atelier collaboratif de cinq jours réunissant chercheurs académiques et étudiants de troisième cycle avec des représentants de l'industrie, autour de problématiques de recherche concrètes soumises par des entreprises locales. Ma participation a été précédée par un Graduate Modelling Camp préparatoire (14–17 janvier 2026), organisé sur le même site, visant à donner aux étudiants une expérience pratique supplémentaire en modélisation mathématique appliquée à des problèmes d'origine industrielle.\n\nLe travail réalisé : durant le study group, j'ai contribué à la résolution de problématiques industrielles par la modélisation mathématique, notamment sur :\n- l'inhibition de la corrosion, en modélisant les mécanismes chimiques et physiques permettant de ralentir la dégradation de matériaux métalliques ;\n- l'extraction minière en eaux profondes (deep-sea mining), en modélisant les processus liés à l'extraction de ressources minérales sous-marines.\n\nÀ l'issue du MISG, j'ai rédigé un rapport détaillant le travail de modélisation effectué, évalué par les organisateurs, puis présenté lors d'une session dédiée à AIMS. Cette participation a compté académiquement pour deux cours de révision (review courses) dans le cadre de mon Master.",
+    "coverImage": "/misg-2026/1.jpg",
+    "imageFolder": "misg-2026"
+  },
+  {
+    "id": "itt-2026",
+    "title": "AIMS South Africa — Integrative Think Tank (ITT) 2026",
+    "type": "Academic Stories",
+    "date": "13–17 Avril 2026",
+    "location": "AIMS South Africa",
+    "summary": "Participation à l'Integrative Think Tank (ITT) 2026. Premier prix remporté avec l'équipe sur un projet d'analytique sportive en partenariat avec Laduma Analytics.",
+    "content": "🏆 1er Prix — R1 500\n\nDans le cadre de mon Master en Sciences Mathématiques à l'African Institute for Mathematical Sciences (AIMS) South Africa, j'ai participé à l'Integrative Think Tank (ITT) 2026, un hackathon de 5 jours (13–17 avril 2026) organisé par le Dr Jacques Rabie, Mathematics Innovation Manager à AIMS. L'ITT réunit les étudiants du Master avec des partenaires industriels pour résoudre, en équipe, des problématiques concrètes de R&D, avec des présentations finales (\"pitchs\") jugées et récompensées par des prix en argent.\n\nL'équipe :\n- Mannondé Gbaguidi\n- Prince Anani\n- Solomon Aniekan Charlie\n- Vanessa Kouam Kenmogne\n- Hassana Alhassan\n- Lavender Akinyi Ayako\n\nLe projet : en partenariat avec Laduma Analytics, société sud-africaine spécialisée dans l'analytique sportive, notre équipe a développé un modèle prédictif de résultats de matchs de football, appliqué à la Premier Soccer League (PSL) sud-africaine. Le modèle, entraîné sur les données de la saison 2024/25 et testé en conditions réelles (hors-échantillon) sur la saison 2025/26, combinait apprentissage automatique (Random Forest) et ingénierie de variables pour prédire les résultats de matchs.\n\nRésultat : notre présentation finale a remporté le 1er prix (R1 500) du hackathon. À la suite de l'événement, nous avons développé une plateforme web complète du projet (WebUnderscore) et l'avons partagée avec Laduma Analytics, qui s'est montrée impressionnée par le travail réalisé et a proposé une collaboration de suivi pour explorer les possibilités de développement et de mise à l'échelle du modèle.",
+    "coverImage": "/itt-2026/1.jpg",
+    "imageFolder": "itt-2026"
+  },
+  {
+    "id": "ai-research-foundations-2026",
+    "title": "AI Research Foundations for Higher Education Programme — Pilot Workshop 2026",
+    "type": "Conferences",
+    "date": "2026",
+    "location": "Muizenberg, Afrique du Sud",
+    "summary": "Participation au Pilot Workshop du programme AI Research Foundations for Higher Education organisé par AIMS South Africa et Google DeepMind.",
+    "content": "En 2026, j'ai eu l'opportunité de participer au Pilot Workshop du programme AI Research Foundations for Higher Education, organisé à Muizenberg par AIMS South Africa (African Institute for Mathematical Sciences), en partenariat avec Google DeepMind, Google.org, la FATE Foundation, ainsi que UCL Computer Science et le UCL Centre for AI.\n\nCe programme de type \"Train the Trainer\" m'a permis d'approfondir à la fois le contenu technique du cours AI Research Foundations conçu par Google DeepMind, et les pratiques pédagogiques nécessaires pour transmettre efficacement ces connaissances dans l'enseignement supérieur. Au-delà du contenu technique, l'accent a été mis sur des approches d'enseignement innovantes, pensées pour rendre l'IA accessible à un public académique diversifié.\n\nAu-delà des sessions de travail, ce fut aussi l'occasion de rencontrer d'autres formateurs et chercheurs venus d'horizons différents, dans un cadre studieux et chaleureux, propice aux échanges.",
+    "coverImage": "/ai.jpg"
+  },
+  {
+    "id": "icammda-2026",
+    "title": "Atelier ICAMMDA sur la Modélisation par Apprentissage Automatique",
+    "type": "Conferences",
+    "date": "3–21 Août 2026",
+    "location": "Université Fédérale Oye-Ekiti (FUOYE), Nigeria",
+    "summary": "Participation à l'atelier ICAMMDA avec le professeur Christopher Thron comme conférencier invité.",
+    "content": "Atelier ICAMMDA sur la modélisation par apprentissage automatique, organisé à l'Université fédérale d'Oye-Ekiti (FUOYE) au Nigeria du 3 au 21 août 2026. L'événement a accueilli le professeur Christopher Thron (Texas A&M University-Central Texas) en tant que conférencier invité. Nous avons exploré les fondements des modèles d'apprentissage automatique (ML), en particulier les modèles basés sur les arbres, ainsi que la formulation de questions de recherche et le développement de stratégies de modélisation efficaces.",
+    "coverImage": "/seminaire-icammda/IMG-20260806-WA0223.jpg",
+    "imageFolder": "seminaire-icammda"
+  }
+]
