@@ -77,7 +77,7 @@ export default function Contact() {
           </a>
 
           <a 
-            href="/CV_GbaguidiFr.pdf" 
+            href="/CV_Gbaguidi_FR.pdf" 
             download="CV_Mannonde_Gbaguidi_FR.pdf"
             target="_blank"
             rel="noopener noreferrer"

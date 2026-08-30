@@ -34,7 +34,7 @@ export default async function CVPage({ params }: { params: Promise<{ locale: str
              <Download className="w-4 h-4" /> Download CV — English
            </a>
            <a 
-             href="/CV_GbaguidiFr.pdf" 
+             href="/CV_Gbaguidi_FR.pdf" 
              target="_blank"
              rel="noopener noreferrer"
              className="flex items-center gap-3 border border-border px-6 py-3 font-semibold tracking-widest uppercase text-sm hover:border-accent hover:text-accent transition-colors"
